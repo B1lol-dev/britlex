@@ -13,7 +13,6 @@ const hero = () => {
           </p>
           <Button>Get started</Button>
         </div>
-        <div></div>
       </Container>
     </section>
   );
