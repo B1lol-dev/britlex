@@ -2,10 +2,13 @@ import type { ComponentChildren } from "preact";
 
 interface IContainerProps {
   children: ComponentChildren;
+  className?: string;
 }
 
-const container = ({ children }: IContainerProps) => (
-  <div class="container max-w-[1338px] w-full mx-auto">{children}</div>
+const container = ({ children, className }: IContainerProps) => (
+  <div class={`container max-w-[1338px] w-full mx-auto ${className}`}>
+    {children}
+  </div>
 );
 
 export default container;
