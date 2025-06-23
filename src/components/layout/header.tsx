@@ -10,7 +10,7 @@ const header = () => {
         <nav class="flex items-center justify-between">
           <img src={logo} alt="" />
           <ul class="flex items-center justify-center gap-5">
-            {navLinks.map((link) => (
+            {navLinks.map(link => (
               <li
                 key={link}
                 class="hover:text-orange-500 cursor-pointer hover:underline"
@@ -19,7 +19,9 @@ const header = () => {
               </li>
             ))}
           </ul>
-          <button class="w-[220px] h-[70px] border-[2px] border-[#263238] rounded-[5px]">Let’s Talk</button>
+          <button class="w-[220px] h-[70px] border-[2px] border-[#263238] rounded-[5px]">
+            Let’s Talk
+          </button>
         </nav>
       </Container>
     </header>
